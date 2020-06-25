@@ -1,0 +1,154 @@
+/*section .row{
+	background-color: #DCE0E5;
+}
+*/
+.navbar{
+	/*background-color: #718398;*/
+	/*background-color: #C1C1D2;*/
+	background-color: #2E343E;
+}
+.logo{
+	/*color: #A30000;*/
+	color: #FF6B6B;
+	font-size: 2em;
+	font-weight: bold;
+}
+.logo:hover{
+	text-decoration: none;
+	color: #FF6B6B;
+}
+.logo em{
+	color: #FFBA08;
+}
+.carousel-caption{
+	color: #A30000;
+	font-weight: bold;
+	font-size: 120%;
+	font-family: "Comic Sans MS" , "Copperplate Gothic Bold" ;
+	text-shadow: 2px 2px #FFBA08;
+}
+
+.left-icon{
+	/*float: left;*/
+	max-width: 60% ;
+}
+.carousel-item img{
+	opacity: 0.7;
+}
+
+h1, h2, h3{
+	text-align: center;
+}
+
+h1{
+	margin-top: 10vh;
+	color: #3F88C5;
+	font-family: "Comic Sans MS" , "Copperplate Gothic Bold" ;
+	font-weight: bolder;
+}
+h2 {
+	margin-top: 10vh;
+	color: #A30000;
+	text-decoration: underline;
+	font-family: "Comic Sans MS","Copperplate Gothic Bold" ;
+}
+
+table{
+	width: 100%;
+	background-color: rgba(255,186,8,0.7);
+	
+}
+table tr{
+	height: 5em;
+	text-align: center;
+}
+table th{
+	text-align: center;
+}
+
+p{
+	text-align: center;
+}
+.figure-caption{
+	text-align: center;
+	font-size: 150%;
+	color: #A30000;
+	/*margin-top: 1em;*/
+}
+.figure{
+	margin-top: 3em;
+}
+.figure img{
+	border: 1px solid #000;
+	border-radius: 5px;
+	text-align: center;
+}
+#map{
+	width: 80vw;
+	height: 50vh;
+	margin-top: 10vh;
+}
+#contact{
+	opacity: 0.8;
+	margin-top: 10vh;
+}
+#hide{
+	display: none;
+}
+form{
+	border: 1px solid #000;
+	/*text-align: center;*/
+	margin-top: 10vh;
+	padding: 5%;
+	background-color: #fff4245c;
+}
+legend{
+	text-align: center;
+}
+#log,
+#sign{
+	display: none;
+}
+.bottom a{
+	display: block;
+	text-align: center;
+}
+
+.bottom{
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: #b7fffe33;
+}
+
+.nav-link{
+	color: #FFBA08;
+}
+.nav-link:hover{
+	color: #FFADAD;
+}
+
+.nav-pills .nav-link.active{
+	/*background-color:rgba(163,0,0,0.6);*/
+	background-color: #FF7070;
+}
+
+.navbar-toggler-icon{
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+@media screen and (min-width: 768px){
+	.left-icon{
+	float: left;
+	max-width: 100% !important;
+   }	
+
+   .carousel-caption{
+   	font-size: 250%;
+   }
+
+   .figure-caption{
+   	margin-top: 4.5em;
+   }
+   #hide{
+   	display: block;
+   }
+}
