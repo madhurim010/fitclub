@@ -8,17 +8,11 @@ function check(){
 }
 
 function login(){
-	var fill= document.getElementById("fill");
-	fill.innerHTML= document.getElementById("log");
-	document.getElementById("log").style.display="block";
 	document.getElementById("sign").style.display="none";
+	document.getElementById("log").style.display="block"
 }
 
 function signup(){
-	var fill= document.getElementById("fill");
-	fill.innerHTML= document.getElementById("sign");
 	document.getElementById("sign").style.display="block";
 	document.getElementById("log").style.display="none";
 }
-
-
