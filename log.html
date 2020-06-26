@@ -19,7 +19,7 @@
   				<div class="col-12">
   					<nav class="navbar  navbar-expand-md">
   						<a href="index.html" class="logo">Fit<em>Club</em></a>
-  						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+  						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynav" value="navbar-toggler">
                 		<span class="navbar-toggler-icon"></span>
                 		</button>
 
@@ -67,10 +67,10 @@
 	  			</div>
 	  		</div>
 	  		<!-- Left and right controls -->
-			  <a class="carousel-control-prev" href="#car" data-slide="prev">
+			  <a class="carousel-control-prev" href="#car" data-slide="prev" value="previous image">
 			    <span class="carousel-control-prev-icon"></span>
 			  </a>
-			  <a class="carousel-control-next" href="#car" data-slide="next">
+			  <a class="carousel-control-next" href="#car" data-slide="next" value="pnext image">
 			    <span class="carousel-control-next-icon"></span>
 			  </a>
 	  	</div>
@@ -80,27 +80,29 @@
 			<h1>FitClub - Gym and Yoga</h1>
 				<h2>Log In or Sign Up</h2>
 			<div class="row"> 
-				<div class="offset-2 col-8 col-md-6 offset-md-3" id="fill">
+				<div class="offset-1 col-10 col-md-6 offset-md-3" id="sign">
 					<form >
-						<fieldset>
-							<legend>Sign Up:</legend>
+						<div class="form-group">
+							<h3>Sign Up</h3>
 							<label for="fname">First name:</label><br>
-			  				<input type="text" id="fname" name="fname"  required=""><br>
+			  				<input type="text" id="fname" name="fname" required><br>	
 							<label for="lname">Last name:</label><br>
-							<input type="text" id="lname" name="lname " required=""><br><br>
-							<label>Gender</label><br>
-							<input type="radio" name="gender"gender id="male" value="male" required="">
-							<label for="male">Male</label><br>
-							<input type="radio" name="gender" id="female" value="female" required="">
-							<label for="female">Female</label><br>
-							<input type="radio" name="gender" id="other" value="other" required="">
-							<label for="other">Other</label><br><br>
-						    <label for="email">Email:</label>
-		  					<input type="email" id="email_main" name="email1" required=""><br><br>
-		  					<label for="email">Confirm Email:</label>
-		  					<input type="email" id="email_repeat" name="email2" onchange="check()" required=""><br><br>
+							<input type="text" id="lname" name="lname "   required><br><br>
+							<fieldset>
+								<legend>Gender</legend>
+								<input type="radio" name="gender" id="male" value="male" required>
+								<label for="male">Male</label>
+								<input type="radio" name="gender" id="female" value="female" required>
+								<label for="female">Female</label>
+								<input type="radio" name="gender" id="other" value="other" required>
+								<label for="other">Other</label><br><br>
+							</fieldset>
+						    <label for="email_main">Email:</label>
+		  					<input type="email" id="email_main" name="email1"  required><br><br>
+		  					<label for="email_repeat">Confirm Email:</label>
+		  					<input type="email" id="email_repeat" name="email2"  onchange="check()" required><br><br>
 		  					<input type="submit" value="Sign Up" onclick="return check()">
-						</fieldset>
+						</div>
 					</form><br>
 					<div class="bottom">
 						<p>Already have an account?</p>
@@ -110,58 +112,29 @@
 			</div>
 		</div>
 	</section>
-	<div class="container-fluid">
-		<div class="row">
-			<div id="sign" class="offset-2 col-8 col-md-6 offset-md-3">
-				<form >
-					<fieldset>
-						<legend>Sign Up:</legend>
-						<label for="fname">First name:</label><br>
-		  				<input type="text" id="fname" name="fname" required=""><br>
-						<label for="lname">Last name:</label><br>
-						<input type="text" id="lname" name="lname "  required=""><br><br>
-						<label>Gender</label><br>
-						<input type="radio" name="gender"gender id="male" value="male" required="">
-						<label for="male">Male</label><br>
-						<input type="radio" name="gender" id="female" value="female" required="">
-						<label for="female">Female</label><br>
-						<input type="radio" name="gender" id="other" value="other" required="">
-						<label for="other">Other</label><br><br>
-					    <label for="email">Email:</label>
-	  					<input type="email" id="email_main" name="email1"  required=""><br><br>
-	  					<label for="email">Confirm Email:</label>
-	  					<input type="email" id="email_repeat" name="email2" onchange="check()" required=""><br><br>
-	  					<input type="submit" value="Sign Up" onclick="return check()">
-					</fieldset>
-				</form><br>
-				<div class="bottom">
-					<p>Already have an account?</p>
-					<a href="#" onclick="login()">Log In</a>
+
+	<section>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="log" class="offset-2 col-8 col-md-6 offset-md-3">
+					<form>
+						<div class="form-group">
+							<h3>Log In</h3>
+							<label for="email_main">Email:</label>
+		  					<input type="email" id="email_main" name="email1"  required><br><br>
+		  					<label for="pass">Password</label>
+		  					<input type="password" name="password" id="pass" required><br><br>
+		  					<input type="submit" value="Log In" onclick="return check()">
+							</div>>
+					</form><br>
+					<div class="bottom">
+						<p>New to fitclub?</p>
+						<a href="#" onclick="signup()" style="text-align: center;">Sign Up</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row">
-			<div id="log" class="offset-2 col-8 col-md-6 offset-md-3">
-				<form>
-					<fieldset>
-						<legend>Log In:</legend>
-						<label for="email">Email:</label>
-	  					   <input type="email" id="email_main" name="email1" required=""><br><br>
-	  					   <label for="pass">Password</label>
-	  					   <input type="password" name="password" id="pass"><br><br>
-	  					   <input type="submit" value="Log In" onclick="return check()">
-						</fieldset>
-				</form><br>
-				<div class="bottom">
-					<p>New to fitclub?</p>
-					<a href="#" onclick="signup()" style="text-align: center;">Sign Up</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	
+	</section>
 	<footer class="footer">
 		<div class="container-fluid">
 			<div class="row">
