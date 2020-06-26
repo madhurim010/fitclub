@@ -9,7 +9,7 @@
  	<link rel="stylesheet" type="text/css" href="css/gym.css">
 
     <script src="https://kit.fontawesome.com/fd28000a46.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/gym.js"></script>
+    <script src="js/gym.js"></script>
     <title>FitClub</title>
   </head>
   <body>
@@ -18,7 +18,7 @@
   			<div class="row">
   				<div class="col-12">
   					<nav class="navbar  navbar-expand-md">
-  						<a href="index.html" class="logo">Fit<em>Club</em></a>
+  						<a href="index.html" class="logo"><i class="fas fa-biking"></i> Fit<em>Club</em></a>
   						<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynav" value="navbar-toggler">
                 		<span class="navbar-toggler-icon"></span>
                 		</button>
@@ -26,10 +26,10 @@
   						<div class="collapse navbar-collapse" id="mynav">
   							<span class="mr-auto"></span>
   							<ul class="navbar-nav nav-pills">
-	  							<li class="nav-item"><a href="index.html" class="nav-link "  >Home</a></li>
-	  							<li class="nav-item"><a href="class.html" class="nav-link" >Classes</a></li>
-	  							<li class="nav-item"><a href="contact.html" class="nav-link" >Contact Us</a></li>
-	  							<li class="nav-item"><a href="log.html" class="nav-link active">Log In</a></li>
+	  							<li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+	  							<li class="nav-item"><a href="class.html" class="nav-link" ><i class="fas fa-dumbbell"></i> Classes</a></li>
+	  							<li class="nav-item"><a href="contact.html" class="nav-link" ><i class="fas fa-address-card"></i> Contact Us</a></li>
+	  							<li class="nav-item"><a href="log.html" class="nav-link active"><i class="fas fa-sign-in-alt"></i> Log In</a></li>
   							</ul>
   						</div>
   					</nav>
@@ -67,10 +67,10 @@
 	  			</div>
 	  		</div>
 	  		<!-- Left and right controls -->
-			  <a class="carousel-control-prev" href="#car" data-slide="prev" value="previous image">
+			  <a class="carousel-control-prev" href="#car" data-slide="prev">
 			    <span class="carousel-control-prev-icon"></span>
 			  </a>
-			  <a class="carousel-control-next" href="#car" data-slide="next" value="pnext image">
+			  <a class="carousel-control-next" href="#car" data-slide="next">
 			    <span class="carousel-control-next-icon"></span>
 			  </a>
 	  	</div>
@@ -120,8 +120,8 @@
 					<form>
 						<div class="form-group">
 							<h3>Log In</h3>
-							<label for="email_main">Email:</label>
-		  					<input type="email" id="email_main" name="email1"  required><br><br>
+							<label for="email">Email:</label>
+		  					<input type="email" id="email" name="email1"  required><br><br>
 		  					<label for="pass">Password</label>
 		  					<input type="password" name="password" id="pass" required><br><br>
 		  					<input type="submit" value="Log In" onclick="return check()">
@@ -137,18 +137,20 @@
 	</section>
 	<footer class="footer">
 		<div class="container-fluid">
+			<div class="row text-center d-flex pt-3 mb-3 justify-content-center">
+				<br>
+				<a href="index.html" class="col-xs-12 col-md-3">Home</a>
+				<a href="class.html" class="col-xs-12 col-md-3">Classes</a>
+				<a href="contact.html" class="col-xs-12 col-md-3">Contact Us</a>
+				<a href="log.html" class="col-xs-12 col-md-3">Log In</a>
+			</div>
 			<div class="row">
-				<div class="col-12 card-footer">
-					<small>Copyright &copy; Fit<em>Club</em></small>
-						<a href="index.html">Home</a>
-						<a href="class.html">Classes</a>
-						<a href="contact.html">Contact Us</a>
-						<a href="Log.html">Log In</a>
+				<div class="col-12 copyright">
+					<small class="mr-3">Copyright &copy; Fit<em>Club</em></small><a href="https://github.com/madhurim010"><i class="fab fa-github"></i>  github</a>
 				</div>
 			</div>
 		</div>
 	</footer>
-
 
 
 
