@@ -154,6 +154,24 @@ legend{
 	font-size: 1.2rem;
 	font-weight: 500;
 }
+.fa-biking{
+	color: #FFBA08;
+}
+footer{
+	background-color: #892F2F;
+}
+footer a{
+	font-weight: 500;
+	border-right: 1px solid #FFBA08 ;
+}
+footer a:last-child{
+	font-weight: 100;
+	border:0px;
+}
+footer a, footer .copyright{
+	text-align: center;
+	color: #FFBA08;
+}
 @media screen and (min-width: 768px){
 	.left-icon{
 	float: left;
