@@ -7,6 +7,13 @@
 	/*background-color: #C1C1D2;*/
 	background-color: #2E343E;
 }
+.container{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	margin-right: 0px;
+	margin-left: 0px;
+	max-width: 768px;
+}
 .logo{
 	/*color: #A30000;*/
 	color: #FF6B6B;
@@ -160,23 +167,38 @@ legend{
 footer{
 	background-color: #892F2F;
 }
-footer a{
+.links>a{
 	font-weight: 500;
 	border-right: 1px solid #FFBA08 ;
+	
 }
-footer a:last-child{
-	font-weight: 100;
-	border:0px;
-}
+
 footer a, footer .copyright{
 	text-align: center;
 	color: #FFBA08;
+}
+hr{
+	width: 80%;
+	background-color: yellow;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+footer p{
+	color: #FFBA08;
+	text-align: center;
 }
 @media screen and (min-width: 768px){
 	.left-icon{
 	float: left;
 	max-width: 100% !important;
    }	
+   .container{
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+	margin-right: 0px;
+	margin-left: 0px;
+	max-width: none;
+}
 
    .carousel-caption{
    	font-size: 250%;
@@ -190,5 +212,8 @@ footer a, footer .copyright{
    }
    .figure img{
    		min-width: 120px;
+   }
+   hr{
+   	display: none;
    }
 }
